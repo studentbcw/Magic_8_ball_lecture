@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Utility classes  */
+
+.text-light {
+  color: floralwhite;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.selectable {
+  cursor: pointer;
+}
+
+/* CSS classes specific to this project  */
+
+.background-image {
+  background-image: url('./assets/8_ball_backdrop.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
