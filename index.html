@@ -1,30 +1,33 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <body class="background-image">
+    <header class="text-light text-center">
+      <h1>Magic 8 Ball: Ask a Question</h1>
+    </header>
+    <main class="text-light text-center">
+      <div>
+        <h2 id="answer-spot">Your Answer</h2>
+      </div>
 
-<body class="background-image">
-  <header class="text-light text-center">
-    <h1>Magic 8 Ball: Ask a Question</h1>
-  </header>
-  <main class="text-light text-center">
-    <div>
-      <h2 id="answer-spot">Your Answer</h2>
-    </div>
-
-    <!--💻 Add an onclick call the giveAnswer() function  -->
-    <img src="assets/magic_8_ball.png" alt="magic 8 ball image" title="click to get an answer to your question"
-      class="selectable" />
-  </main>
-
-  <script src="script.js"></script>
-
- 
-</body>
-
+      <!--💻 Add an onclick call the giveAnswer() function  -->
+      <img
+        src="assets/magic_8_ball.png"
+        alt="magic 8 ball image"
+        title="click to get an answer to your question"
+        class="selectable"
+      />
+    </main>
+    <script src="node_modules/eruda/eruda.js"></script>
+    <script>
+      eruda.init();
+    </script>
+    <script src="script.js"></script>
+  </body>
 </html>
